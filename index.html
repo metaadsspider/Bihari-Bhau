@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devid Johnson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,226 +22,241 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=897187213383329&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#080c12">
-<title>Bihari Bhau</title>
-<meta name="description" content="Cricket updates and analysis for fans.">
-<style>
-  *,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-  body{
-    background:#080c12;
-    color:#fff;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    min-height:100vh;
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    -webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;
-    padding:48px 16px 24px;
-    -webkit-tap-highlight-color:transparent;
-  }
-  @supports (min-height:100dvh){body{min-height:100dvh}}
+    <style>
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-  .card{
-    position:relative;
-    width:100%;
-    max-width:440px;
-    background:#111827;
-    border:1px solid #1f2937;
-    border-radius:28px;
-    padding:46px 18px 22px;
-    box-shadow:0 10px 40px rgba(0,0,0,.45);
-  }
+        body {
+            background-color: #000;
+            /* Dark Grid Background Effect */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
 
-  /* top pill */
-  .pill{
-    position:absolute;top:-18px;left:50%;
-    -webkit-transform:translateX(-50%);transform:translateX(-50%);
-    background:#10b981;color:#052e22;
-    font-weight:800;font-size:14px;letter-spacing:.5px;
-    padding:13px 22px;border-radius:999px;white-space:nowrap;
-    box-shadow:0 0 22px rgba(16,185,129,.45);
-  }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            /* Central Glow Effect */
+            background: radial-gradient(circle at center, #1a1a00 0%, #000 80%);
+            padding: 20px;
+            border-radius: 25px;
+        }
 
-  /* header */
-  .head{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:18px}
-  .avatar{
-    width:62px;height:62px;border-radius:50%;
-    padding:3px;margin-right:14px;-ms-flex-negative:0;flex-shrink:0;
-    background:#a3e635;
-    background:linear-gradient(135deg,#a3e635,#f59e0b,#10b981);
-  }
-  .avatar-in{
-    width:100%;height:100%;border-radius:50%;overflow:hidden;
-    background:#1a1a1a;color:#f5c542;
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    -webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;
-    font-weight:800;font-size:22px;
-  }
-  .avatar-in img{width:100%;height:100%;object-fit:cover;display:block}
-  .title{margin:0;font-size:22px;font-weight:800;line-height:1.15;letter-spacing:.2px}
-  .title sup{font-size:9px;color:#9ca3af;font-weight:700;vertical-align:super;margin-left:2px}
-  .sub{margin:3px 0 0;font-size:14px;color:#94a3b8}
+        /* Profile Section */
+        .profile-wrapper {
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
 
-  /* yellow banner */
-  .banner{
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    background:#fcd116;color:#111;
-    border-radius:16px;padding:14px 16px;margin-bottom:16px;
-    box-shadow:0 0 22px rgba(252,209,22,.25);
-  }
-  .banner svg{width:20px;height:20px;margin-right:12px;-ms-flex-negative:0;flex-shrink:0}
-  .banner span{font-weight:800;font-size:13.5px;line-height:1.3;text-transform:uppercase}
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #ccff00;
+            box-shadow: 0 0 25px #ccff0066;
+            object-fit: cover;
+            background: #222; /* Placeholder color */
+        }
 
-  /* timer */
-  .timer{
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    -webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;
-    background:#0d1522;border:1px solid #1e293b;
-    border-radius:16px;padding:14px 16px;margin-bottom:16px;
-  }
-  .timer-l{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:600;font-size:15px;color:#cbd5e1;text-transform:uppercase}
-  .timer-l svg{width:19px;height:19px;margin-right:10px;-ms-flex-negative:0;flex-shrink:0}
-  .secs{
-    min-width:62px;text-align:center;
-    background:#0b3b33;border:1px solid #14675a;color:#34d399;
-    font-weight:800;font-size:18px;
-    padding:6px 14px;border-radius:12px;
-    font-variant-numeric:tabular-nums;
-  }
+        h1 {
+            color: #ffcc00;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
 
-  /* CTA */
-  .cta{
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    text-decoration:none;color:#fff;
-    background:#229ed9;
-    background:-webkit-linear-gradient(left,#1b7fc4,#2aabee);
-    background:linear-gradient(90deg,#1b7fc4,#2aabee);
-    border:1px solid #2b8fd1;
-    border-radius:18px;padding:16px;
-    box-shadow:0 6px 22px rgba(42,171,238,.35);
-    -webkit-transition:-webkit-transform .15s;transition:transform .15s;
-    cursor:pointer;
-  }
-  .cta:active{-webkit-transform:scale(.98);transform:scale(.98)}
-  .cta-ic{
-    width:44px;height:44px;border-radius:12px;margin-right:14px;
-    background:rgba(255,255,255,.18);
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    -webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;
-    -ms-flex-negative:0;flex-shrink:0;
-  }
-  .cta-ic svg{width:22px;height:22px}
-  .cta-t{-webkit-box-flex:1;-ms-flex:1;flex:1;min-width:0}
-  .cta-t b{display:block;font-size:17px;font-weight:800;text-transform:uppercase}
-  .cta-t small{display:block;font-size:13px;color:#d8f0fd;margin-top:2px}
-  .cta-ar{
-    width:40px;height:40px;border-radius:50%;background:#fff;margin-left:10px;
-    display:-webkit-box;display:-ms-flexbox;display:flex;
-    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-    -webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;
-    -ms-flex-negative:0;flex-shrink:0;
-  }
-  .cta-ar svg{width:18px;height:18px}
+        .members-count {
+            color: #ffcc00;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
 
-  .line{border:0;border-top:1px dashed #2a3445;margin:22px 0 16px}
-  .disc{margin:0 auto 18px;max-width:340px;text-align:center;font-size:12.5px;line-height:1.6;color:#7c8ba1}
-  .pow{margin:0;text-align:center;font-size:14px;color:#94a3b8}
-  .pow b{color:#f59e0b}
+        /* Badges */
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
 
-  /* soft pulse only on capable devices */
-  @media (prefers-reduced-motion:no-preference){
-    .secs{-webkit-animation:pulse 1s ease-in-out infinite;animation:pulse 1s ease-in-out infinite}
-  }
-  @-webkit-keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
+        .badge {
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 600;
+            background: rgba(0,0,0,0.5);
+        }
 
-  @media (max-width:360px){
-    .card{padding:44px 14px 20px;border-radius:24px}
-    .title{font-size:19px}
-    .banner span{font-size:12px}
-    .timer-l{font-size:13px}
-    .cta-t b{font-size:15px}
-  }
-</style>
+        .badge-elite { border: 1px solid #ffcc00; color: #ffcc00; }
+        .badge-live { border: 1px solid #ff3300; color: #ff3300; }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #0d0d0d;
+            border: 1px solid #222;
+            padding: 18px 5px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .card:nth-child(2) { border-color: #ff444466; } /* Middle card highlight */
+
+        .val { font-size: 20px; font-weight: 800; display: block; margin-bottom: 4px; }
+        .yellow-text { color: #ffcc00; }
+        .red-text { color: #ff4444; }
+        .label { font-size: 12px; color: #888; text-transform: capitalize; }
+
+        /* --- THE UNDER-BAHAR ANIMATED BUTTON --- */
+        @keyframes move-in-out {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 139, 34, 0.4); }
+            50% { transform: scale(1.06); box-shadow: 0 0 25px 5px rgba(34, 139, 34, 0.2); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 139, 34, 0); }
+        }
+        .tg-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #2e7d32 0%, #c62828 100%);
+          color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 35px;
+            /* Animation Trigger */
+            animation: move-in-out 1.5s infinite ease-in-out;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Features Section */
+        .features-grid {
+            border: 1px solid #333;
+            border-radius: 18px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 22px 5px;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .f-item i { font-size: 22px; margin-bottom: 8px; display: block; }
+        .f-item span { font-size: 11px; color: #999; font-weight: 500; }
+
+        .clr-green { color: #4caf50; }
+        .clr-yellow { color: #ffcc00; }
+        .clr-red { color: #ff4444; }
+
+        /* Footer */
+        .footer-info {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .domain-link {
+            display: block;
+            margin-top: 25px;
+            color: #444;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-<main class="card">
-  <div class="pill">VIP TOSS UPDATES</div>
-
-  <div class="head">
-    <div class="avatar"><div class="avatar-in" id="logoBox">RT</div></div>
-    <div>
-      <h1 class="title">Bihari Bhau<sup>TM</sup></h1>
-      <p class="sub">Verified Official Hub</p>
+<div class="container">
+    <div class="profile-wrapper">
+        <img src="https://github.com/metaadsspider/Arjun/blob/main/IMG_20261102_160828_587.jpg" alt="Jia Sharma" class="profile-img">
     </div>
-  </div>
 
-  <div class="banner">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#e11d48" d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
-    <span>Accurate analysis. Match update.<br>Right prediction</span>
-  </div>
-
-  <div class="timer">
-    <div class="timer-l">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fcd116" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      VIP Access closes in
+    <h1>🏏Bihari Bhau</h1>
+    
+    <div class="members-count">
+        <i class="fas fa-users"></i> 20K+ Active Members
     </div>
-    <div class="secs" id="secs">10s</div>
-  </div>
 
-  <a class="cta" id="cta" href="https://t.me/+pk4-CRmxLhxlYTk9" rel="noopener">
-    <span class="cta-ic">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M21.5 3.6 2.9 10.8c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.9c.3-1.2-.5-1.8-1.3-1.6zM8.6 13.3l10.7-6.7c.5-.3 1-.1.6.2l-8.7 8-.3 3.8z"/></svg>
-    </span>
-    <span class="cta-t"><b>Join Telegram Now</b><small>Get instant notifications</small></span>
-    <span class="cta-ar">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#1b7fc4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </span>
-  </a>
+    <div class="badge-row">
+        <div class="badge badge-elite">🏆 Elite Analyst</div>
+        <div class="badge badge-live">⚡️ Live Updates</div>
+    </div>
 
-  <hr class="line">
+    <div class="stats-grid">
+        <div class="card">
+            <span class="val yellow-text">25,892</span>
+            <span class="label">Match Tips</span>
+        </div>
+        <div class="card">
+            <span class="val red-text">99%</span>
+            <span class="label">Win Rate</span>
+        </div>
+        <div class="card">
+            <span class="val yellow-text">4.9★</span>
+            <span class="label">Rating</span>
+        </div>
+    </div>
 
-  <p class="disc">Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.</p>
-  <p class="pow">Powered by <b>Spidy Ads Agency</b></p>
-</main>
+    <a href="https://telegram.me/+pk4-CRmxLhxlYTk9" class="tg-button" onclick="fbq('track', 'Subscribe', {value: 0.00, currency: 'INR'});">
+        <i class="fab fa-telegram-plane"></i> Join Telegram Channel
+    </a>
 
-<script>
-(function () {
-  // ===== EDIT THESE =====
-  var TELEGRAM_LINK = "https://t.me/+pk4-CRmxLhxlYTk9"; // your channel / invite link
-  var LOGO_URL      = "https://github.com/metaadsspider/Arjun/blob/main/IMG_20261102_160828_587.jpg?raw=true";                            // e.g. "logo.jpg" (square image). Leave empty to show initials
-  var COUNTDOWN     = 10;                            // seconds shown, restarts when it reaches 0
-  // ======================
+    <div class="features-grid">
+        <div class="f-item">
+            <i class="far fa-check-circle clr-green"></i>
+            <span>Verified</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-lock clr-yellow"></i>
+            <span>Secure</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-chart-line clr-red"></i>
+            <span>Profitable</span>
+        </div>
+        <div class="f-item">
+            <i class="far fa-star clr-yellow"></i>
+            <span>Top Rated</span>
+        </div>
+    </div>
 
-  var cta = document.getElementById("cta");
-  var secsEl = document.getElementById("secs");
-  var logoBox = document.getElementById("logoBox");
+    <div class="footer-info">
+        © 2015 Bihari Bhau. All rights reserved.<br>
+        <i class="fas fa-cricket-bat-ball" style="font-size: 10px;"></i> Professional Cricket,Tennis Analysis & Predictions
+    </div>
 
-  cta.href = TELEGRAM_LINK;
+    <a href="#" class="domain-link"></a>
+</div>
 
-  if (LOGO_URL) {
-    var img = new Image();
-    img.alt = "Logo";
-    img.onload = function () { logoBox.innerHTML = ""; logoBox.appendChild(img); };
-    img.src = LOGO_URL;
-  }
-
-  var left = COUNTDOWN;
-  secsEl.textContent = left + "s";
-  setInterval(function () {
-    left = left <= 1 ? COUNTDOWN : left - 1;
-    secsEl.textContent = left + "s";
-  }, 1000);
-})();
-</script>
 </body>
 </html>
